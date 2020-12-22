@@ -32,9 +32,11 @@ public class BitacoraPresion extends FragmentActivity {
     recyclePresion = (RecyclerView) findViewById(R.id.recyclePresion);
     recyclePresion.setLayoutManager(new LinearLayoutManager(this));
 
-    consultarListaPresion();
+        consultarListaPresion();
+
         PresionAdapter adapter = new PresionAdapter(listaPresion);
         recyclePresion.setAdapter(adapter);
+
     }
 
     private void consultarListaPresion(){
